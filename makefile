@@ -17,3 +17,10 @@ clean:
 
 save:
 	git-save
+
+run2:
+	set -x CUDA_HOME ~/anaconda3/envs/sglang
+	set -x CUDA_PATH ~/anaconda3/envs/sglang
+	set -x CUDACXX ~/anaconda3/envs/sglang/bin/nvcc
+	set -x LD_LIBRARY_PATH ~/anaconda3/envs/sglang/lib:~/anaconda3/envs/sglang/lib64:$LD_LIBRARY_PATH
+	make run
