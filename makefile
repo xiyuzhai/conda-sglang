@@ -14,3 +14,6 @@ run:
 
 clean:
 	conda remove pytorch torchvision torchaudio pytorch-cuda -y
+
+save:
+	git-save
